@@ -56,11 +56,11 @@ storybook-static
 
 .storybook/main.js
 .vscode
-inmogr-api-node
-inmogr-api-react
-inmogr-api-react-auth
-inmogr-api-react-awaneek
-inmogr-api-react-public
+my-api-node
+my-api-react
+my-api-react-auth
+my-api-react-awaneek
+my-api-react-public
 scripts
 testing
 types

@@ -1,11 +1,29 @@
 {
   "compilerOptions": {
+    "types": [
+      "node",
+      "@types/jest",
+      "@testing-library/jest-dom",
+      "vite-plugin-svgr/client"
+    ],
+    "typeRoots": [
+      "my-api-node",
+      "my-api-react",
+      "my-api-react-auth",
+      "my-api-react-awaneek",
+      "my-api-react-public",
+      "node_modules/@types"
+    ],
     "target": "ESNext",
     "useDefineForClassFields": true,
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
     "allowJs": false,
     "skipLibCheck": true,
-    "esModuleInterop": false,
+    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
@@ -14,8 +32,48 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": "./",
+    "paths": {
+      "my-api-node/*": [
+        "./my-api-node/*"
+      ],
+      "my-api-react/*": [
+        "./my-api-react/*"
+      ],
+      "my-api-react-auth/*": [
+        "./my-api-react-auth/*"
+      ],
+      "my-api-react-awaneek/*": [
+        "./my-api-react-awaneek/*"
+      ],
+      "my-api-react-public/*": [
+        "./my-api-react-public/*"
+      ],
+      "@/*": [
+        "./@/*"
+      ],
+      "~/*": [
+        "./src/*"
+      ],
+      "_/*": [
+        "./_/*"
+      ]
+    }
   },
-  "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": [
+    "my-api-node",
+    "my-api-react",
+    "my-api-react-auth",
+    "my-api-react-awaneek",
+    "my-api-react-public",
+    "./@",
+    "./src",
+    "./testing",
+    "./types",
+    "./zsecrete"
+  ],
+  "exclude": [
+    "**/*.generated.tsx"
+  ]
 }
