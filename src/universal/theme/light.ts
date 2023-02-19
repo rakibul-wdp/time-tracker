@@ -1,0 +1,16 @@
+export const lightPalette = {
+    primary: "#32A071",
+    primaryHover: "#C7F0DF",
+    primaryText: "#2DA771",
+    white: "#ffffff",
+    accent: "#000000",
+    accentHalfOpacity: "#0000007f",
+    disable: "#F7F7F8",
+    disableButton: "#C4C4C4",
+    disableText: "#252222",
+    error: "#EF5350",
+    info: "#3DB5D8",
+    warning: "#ED6C02",
+    success: "#4CAF50",
+    highlightFill: "#00502E",
+};
